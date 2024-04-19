@@ -6,7 +6,7 @@
     <!--!TITULO-->
     <title>El progreso</title>
     <!--!HOJAS DE ESTILO-->
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/prueba.css">
     <link rel="stylesheet" href="./styles/reset.css">
     <!--!FUENTE DE LETRAS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,13 +14,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
     <header class="wrapperheader">
-        <h1>Muebleria Online</h1>
+        <h1><a href="./index.html">Muebleria Online </a></h1>
         <nav class="navbar">
-            <ul>
-                <li><a href="./prueba.html">Living</a></li>
-                <li><a href="#">Comedor</a></li>
-                <li><a href="#">Exterior</a></li>
         </nav>
             <div class="container-input">
                 <input type="text" placeholder="Search" name="text" class="input" id="search">
@@ -66,26 +72,6 @@
     <main class="ofertasmain">
         <section class="ofertassection">
             <h1>OFERTAS! 💣💣</h1>
-            <div class="container">
-                <div class="tarjeta">
-                    <img src="./assets/sillon.webp" alt="Image Not Found">
-                    <h3>Sillon</h3>
-                    <p>a</p>
-                    <span><b>100$</b></span>
-                </div>
-                <div class="tarjeta2">
-                    <img src="/assets/sillon.webp" alt="Image Not Found">
-                    <h3>Sillon</h3>
-                    <p>b</p>
-                    <span><b>150$</b></span>
-                </div>
-                <div class="tarjeta3">
-                    <img src="/assets/sillon.webp" alt="Image Not Found">
-                    <h3>Sillon</h3>
-                    <p>c</p>
-                    <span><b>200$</b></span>
-                </div>
-            </div>
         </section>
     </main>
     <script>src="./scripts/script.js" </script>

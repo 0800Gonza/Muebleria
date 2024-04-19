@@ -25,30 +25,79 @@ nav {
     margin-bottom: 0;
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-}
-nav li {
-    margin-right: 10px;
-    font-size: 23.5px;
-}
-nav li:hover{
-  border-bottom: 3px solid #333;
-}
-/* Estilos para el menu desplegable */
-li ul {
-  display: none; /* Ocultar la sublista por defecto */
-  position: absolute; /* Posicionamiento absoluto */
-  top: 90%; /* Posicionarla en la parte superior del elemento padre */
-}
+.burger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .burger input {
+    display: none;
+  }
+  
+  .burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  
+  .burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+  }
+  
+  .burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+  }
 .container-input {
     display: flex;
     justify-content: end;
   }
-  
+  .sidebar {
+    position: fixed; /* Position the sidebar fixed to the viewport */
+    top: 0; /* Start at the top of the viewport */
+    left: 0; /* Start at the left of the viewport */
+    width: 250px; /* Set the width of the sidebar */
+    height: 100vh; /* Make the sidebar full viewport height */
+    background-color: #f0f0f0; /* Set the background color */
+    padding: 20px; /* Add padding for content */
+}
+
   .input {
     width: 150px;
     padding: 10px 0px 10px 40px;
@@ -199,14 +248,7 @@ li ul {
    .ofertassection h1 {
     display: flex;
     justify-content: center;
-
     margin-top: 20px;
     margin-bottom: 20px;
-   }
-   .container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 30px;
-    width: 80%;
+    border-bottom: 1px solid #000000;
    }
