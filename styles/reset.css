@@ -1,0 +1,49 @@
+/* Normalize Margins and Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Remove List Styling */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Links */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Images */
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    margin: 1em 0;
+    font-family: inherit;
+    font-weight: normal;
+  }
+  
+  /* Paragraphs */
+  p {
+    margin: 1em 0;
+  }
+  
+  /* Inline elements */
+  input, button, select, textarea {
+    margin: 0;
+    padding: 0.5em 1em;
+    border: 1px solid #ddd;
+    font: inherit;
+  }
+  
+  /* Tables */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
