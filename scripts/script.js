@@ -1,3 +1,9 @@
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
+injectSpeedInsights();
+
 $(document).ready(function() {
     $('.carousel').slick({
         autoplay: true,
