@@ -29,7 +29,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     margin: 0px;
-    padding: 0px;
+    padding: 6px;
 }
 nav li {
     margin-right: 10px;
