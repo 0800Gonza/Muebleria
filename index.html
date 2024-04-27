@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/carrousel.css">
+    <link rel="stylesheet" href="./styles/notification.css">
     <!--!FUENTE DE LETRAS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -233,9 +234,20 @@
         <!--!Seguido de este main debe ir el carrousel de ofertas-->
     </main>
     <!--! Lo siguiente es lo que muestra el logo de whatsapp por toda la pagina-->
-    <a href="https://api.whatsapp.com/send?phone=+1234567890" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=+1234567890" target="_blank" rel="noopener">
         <img id="whatsapp-logo" src="./assets/LogosWhatsappIcon.webp" alt="Logo de WhatsApp">
     </a>
+    <div class="notification">
+        <div class="notification__body">
+            <img
+                src="./assets/check-circle.svg"
+                alt="Success"
+                class="notification__icon"
+            >
+            Bienvenido a la Muebleria Online El Progreso &#128640; 
+        </div>
+        <div class="notification__progress"></div>
+    </div>
     <script src="./scripts/carrousel.js"></script>
 </body>
 </html>

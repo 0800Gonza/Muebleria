@@ -7,14 +7,6 @@
   --text-gray: #252525;
   --text-white: #333;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto Mono", monospace;
-}
-
 header {
   background-color: var(--nav-background);
   padding: 20px;
