@@ -6,88 +6,236 @@
     <!--!TITULO-->
     <title>El progreso</title>
     <!--!HOJAS DE ESTILO-->
-    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/carrousel.css">
     <!--!FUENTE DE LETRAS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="wrapperheader">
-        <h1>Muebleria Online</h1>
-        <nav class="navbar">
-            <ul>
-                <li><a href="./prueba.html">Living</a></li>
-                <li><a href="#">Comedor</a></li>
-                <li><a href="#">Exterior</a></li>
-        </nav>
-            <div class="container-input">
-                <input type="text" placeholder="Search" name="text" class="input" id="search">
-              </div> 
+    <!--!Lo siguiente es el header mas el navbar y search-->
+    <header>
+        <h1>El progreso</h1>
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a href="./index.html" title="Home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Blog">
+                        Productos
+                        <svg xmlns="http://www.w3.org/2000/svg" class="chevron" width="24" height="24" viewBox="0 0 24 24"
+                        stroke-width="2" stroke="gray" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M9 6l6 6l-6 6"></path>
+                    </svg>
+                    </a>
+                        
+                    <div class="subnavigation__wrapper">
+                        <ul>
+                            <li>
+                                <a href="#services" title="Services">
+                                    Interior
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#portfolio" title="Portfolio">
+                                    Exterior
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#comedor" title="Comedor">
+                                    Comedor
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#company" title="Company">
+                        Contactanos
+                        <svg xmlns="http://www.w3.org/2000/svg" class="chevron" width="24" height="24" viewBox="0 0 24 24"
+                            stroke-width="2" stroke="gray" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M9 6l6 6l-6 6"></path>
+                        </svg>
+                    </a>
+                    <div class="subnavigation__wrapper">
+                        <ul>
+                            <li>
+                                <a href="#about" title="About">
+                                    <span class="link-inner">About</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact-us" title="Contact Us">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact-us">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            </nav>
     </header>
+    </main>
+    <!--!Lo siguiente es el carrousel Destacado-->
     <main>
         <article>
-            <div>
                 <h1>Destacados ✨</h1>
-            </div>
-            <section class="bestproducts">
-                <div class="contenedortarjetas">
-                    <div class="tarjeta">
-                        <img src="./assets/sillon.webp" alt="Image Not Found">
-                        <h3>Sillon</h3>
-                        <p>a</p>
-                        <span><b>100$</b></span>
-                    </div>
-                    <div class="tarjeta2">
-                        <img src="/assets/sillon.webp" alt="Image Not Found">
-                        <h3>Sillon</h3>
-                        <p>b</p>
-                        <span><b>150$</b></span>
-                    </div>
-                    <div class="tarjeta3">
-                        <img src="/assets/sillon.webp" alt="Image Not Found">
-                        <h3>Sillon</h3>
-                        <p>c</p>
-                        <span><b>200$</b></span>
-                    </div>
-                </div>
-            </section>   
+                <hr>
         </article>
-        <section class="mas">
-            <button class="learn-more">
-                <span class="circle" aria-hidden="true">
-                    <span class="icon arrow"></span>
-                </span>
-                <span class="button-text">Nuevos Productos</span>
+    
+    <section>
+    <div class="container">
+        <div class="top-bar">
+            <button type="button" disabled id="action-button--previous" class="action-button--horizontal-scroll">
             </button>
-        </section>
-    </main>
+            <button type="button" id="action-button--next" class="action-button--horizontal-scroll">
+            </button>
+        </div>
+        <div id="events">
+            <a href="#the-weeknd" class="event">
+                <div class="event__image">
+                    <img src="./assets/sillon.webp" alt="The Weeknd">
+                    <div class="event__indicator event__type">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
+                          </svg>
+                          
+                    </div>
+
+                </div>
+                <div class="event-description">
+                    <h2>
+                        Sillones
+                    </h2>
+                    <div class="bottom-stats">
+                        <div class="bottom-stat">
+                            <p>Sillon para el Living muy comodo, color beigh</p>
+                        </div>
+                        <div class="bottom-stat">
+                            <div class="circle circle--green"></div>
+                            300$
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#the-weeknd" class="event">
+                <div class="event__image">
+                    <img src="./assets/sillon.webp"
+                        alt="The Weeknd">
+                    <div class="event__indicator event__type">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
+                          </svg>
+                          
+                    </div>
+
+                </div>
+                <div class="event-description">
+                    <h2>
+                        Sillones
+                    </h2>
+                    <div class="bottom-stats">
+                        <div class="bottom-stat">
+                            <p>Sillon para el Living muy comodo, color beigh</p>
+                        </div>
+                        <div class="bottom-stat">
+                            <div class="circle circle--green"></div>
+                            300$
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#the-weeknd" class="event">
+                <div class="event__image">
+                    <img src="./assets/sillon.webp"
+                        alt="The Weeknd">
+
+                    <div class="event__indicator event__type">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
+                          </svg>
+                          
+                    </div>
+
+                </div>
+                <div class="event-description">
+                    <h2>
+                        Sillones
+                    </h2>
+                    <div class="bottom-stats">
+                        <div class="bottom-stat">
+                            <p>Sillon para el Living muy comodo, color beigh</p>
+                        </div>
+                        <div class="bottom-stat">
+                            <div class="circle circle--green"></div>
+                            300$
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#the-weeknd" class="event">
+                <div class="event__image">
+                    <img src="./assets/sillon.webp"
+                        alt="The Weeknd">
+                    <div class="event__indicator event__type">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
+                          </svg>
+                          
+                    </div>
+                </div>
+                <div class="event-description">
+                    <h2>
+                        Sillones
+                    </h2>
+                    <div class="bottom-stats">
+                        <div class="bottom-stat">
+                            <p>Sillon para el Living muy comodo, color beigh</p>
+                        </div>
+                        <div class="bottom-stat">
+                            <div class="circle circle--green"></div>
+                            300$
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    </section></main>
+    <!--!Lo siguiente es el boton de ver mas productos-->
+    <section class="mas">
+        <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Nuevos Productos</span>
+        </button>
+    </section>
     <main class="ofertasmain">
-        <section class="ofertassection">
-            <h1>OFERTAS! 💣💣</h1>
-            <div class="container">
-                <div class="tarjeta">
-                    <img src="./assets/sillon.webp" alt="Image Not Found">
-                    <h3>Sillon</h3>
-                    <p>a</p>
-                    <span><b>100$</b></span>
-                </div>
-                <div class="tarjeta2">
-                    <img src="/assets/sillon.webp" alt="Image Not Found">
-                    <h3>Sillon</h3>
-                    <p>b</p>
-                    <span><b>150$</b></span>
-                </div>
-                <div class="tarjeta3">
-                    <img src="/assets/sillon.webp" alt="Image Not Found">
-                    <h3>Sillon</h3>
-                    <p>c</p>
-                    <span><b>200$</b></span>
-                </div>
-            </div>
-        </section>
+        <article class="ofertasarticle">
+            <h1>
+                Ofertas💣
+            </h1>
+            <hr>
+        </article>
+        <!--!Seguido de este main debe ir el carrousel de ofertas-->
     </main>
-    <script>src="./scripts/script.js" </script>
+    <!--! Lo siguiente es lo que muestra el logo de whatsapp por toda la pagina-->
+    <a href="https://api.whatsapp.com/send?phone=+1234567890" target="_blank">
+        <img id="whatsapp-logo" src="./assets/LogosWhatsappIcon.webp" alt="Logo de WhatsApp">
+    </a>
+    <script src="./scripts/carrousel.js"></script>
 </body>
 </html>
