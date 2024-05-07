@@ -212,7 +212,7 @@ hr {
     color: #fff;
    }
 
-   #whatsapp-logo {
+   .whatsapp-logo {
       position: fixed; /* Esto hace que el logo permanezca en su posición */
       bottom: 20px; /* Ajusta la distancia desde la parte inferior de la página */
       right: 20px; /* Ajusta la distancia desde el lado derecho de la página */
